@@ -5,9 +5,9 @@ import Parent from './Parent';
 import ValueContext from './ValueContext';
 
 function App() {
-  let [number, setNumber] = useState(20);
+  let value  = useState(20);
   return (
-    <ValueContext.Provider value = {75}>
+    <ValueContext.Provider value = {value}>
       <div>
         Hello World!
         <Parent></Parent>
